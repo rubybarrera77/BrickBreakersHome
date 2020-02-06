@@ -8,8 +8,6 @@ public class Ball {
 
     double dx = SPEED, dy = SPEED;
 
-    double angle = 5*Math.PI/12;
-
     Board board;
 
     public Ball(Board board){
