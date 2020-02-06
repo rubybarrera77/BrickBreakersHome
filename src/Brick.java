@@ -8,7 +8,7 @@ public class Brick {
     int g = (int)(Math.random()*256);
     int b = (int)(Math.random()*256);
 
-    Color color = new Color();
+    Color color = new Color(r, g, b);
     //make method
 
     public Brick(){
