@@ -9,7 +9,9 @@ public class Brick {
     int b = (int)(Math.random()*256);
 
     Color color = new Color(r, g, b);
-    //make method
+    public Color getColor(){
+        return color;
+    }
 
     public Brick(){
         x = 70;
@@ -22,10 +24,12 @@ public class Brick {
     }
 
     public void paint(Graphics g){
-        g.setColor();
+        g.setColor(getColor());
         g.fillRect(x, y, WIDTH, HEIGHT);
     }
 
-
+    public Rectangle getBounds(){
+        return new Rectangle(x, y, WIDTH, HEIGHT);
+    }
 
 }
